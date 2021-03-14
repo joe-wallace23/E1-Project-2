@@ -64,9 +64,9 @@ app.post("/", function(req,res){
      }else{
        res.render("failure")
      }
-     response.on("data", function(data) {
-       console.log(JSON.parse(data));
-     })
+    //  response.on("data", function(data) {
+    //    console.log(JSON.parse(data));
+    //  })
    })
    request.write(jsonData)
    request.end()
