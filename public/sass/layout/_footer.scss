@@ -1,0 +1,117 @@
+.bottom{
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    border-top: .5rem solid  #673716;
+    position: relative;
+    background-image: url(/images/footerbg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+
+    &__miniTitle h2{
+        font-size: 1.2rem;
+        color: #000;
+        letter-spacing: .1rem;
+        text-transform: uppercase;
+        padding-bottom: 1rem;
+    }
+    &__list{
+        list-style: none;
+    }
+    &__item{
+        display: inline-block;
+    }
+    &__item:not(:last-child){
+       margin-right: 5rem;
+    }
+    &__link{
+       font-size: 1rem;
+       color: #000;
+       text-transform: uppercase;
+       font-weight: bold;
+       font-family:'Grandstander', cursive;
+
+       &:hover{
+        color: #000 !important;
+        text-decoration: none;
+       }
+       &:hover::after{
+        content: '';
+        display: block;
+        background-color:#f99dca ;
+        height: .1rem;
+        position: relative;
+        transition: all .5s ease-in;
+    }
+     }
+   &__content img{
+       width: 9rem;
+       position: absolute;
+      top: -2.8rem;
+   }
+   &__london{
+       font-size: 1.2rem;
+       color: #fff;
+       background-color: $color-dunkin;
+       padding: .5rem 1.8rem;
+       border-radius: 2rem;
+       border: .1rem solid $color-dunkin;
+   }
+   &__followUs{
+       padding: .7rem 0;
+   }
+   &__followUs h2{
+    font-size: 1.7rem;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+    font-weight: bold;
+   }
+   &__socialList{
+       list-style: none;
+   }
+   &__icon{
+    width: 3rem;
+    height: 3rem;
+    background-color: $color-dunkin;
+    padding: .8rem;
+    border-radius: 5rem;
+    fill: #fff;
+   }
+   &__socialItem{
+       display: inline-block;
+   }
+   &__socialItem:not(:last-child){
+    margin-right: 1rem;
+}
+&__copy p{
+    font-size: 1rem;
+    color: #333;
+    letter-spacing: .1rem;
+}
+
+}
+.bottom .contact-form .form-control{
+    border-radius: .5rem;
+ }
+
+.bottom .contact-form .form-control:focus{
+   border: .3rem solid $color-dunkin;
+}
+
+.bottom .contact-form input[type="text"]{
+    outline: 0;
+    box-shadow: none !important;
+    border: .3rem solid #673716;
+}
+.bottom .contact-form input[type="email"]{
+    outline: 0;
+    box-shadow: none !important;
+    border: .3rem solid #673716;
+}
+
+.bottom .col-lg-6{
+    margin-bottom: 1rem;
+}
+

@@ -1,0 +1,54 @@
+.plus{
+    &__button{
+        margin-top: 1rem;
+    }
+    &__sign{
+       @include button;
+       font-weight: bold;
+        background-color: $color-links;
+        color: #fff;
+        margin-right: .6rem;
+        &:hover{
+            color: #fff;
+            text-decoration: none;
+        }
+
+        @include respond(phone){
+            padding: .7rem 2rem;
+        }
+    }
+    &__learn{
+        @include button2;
+        font-weight: bold;
+        background-color: transparent;
+        color: $color-links;
+        border: .2rem solid $color-links;
+        &:hover{
+            color: #fff;
+            background-color: $color-links;
+            transition: all .5s ease-in;
+            text-decoration: none;
+        }
+        @include respond(phone){
+            padding: .7rem 1rem;
+        }
+    }
+}
+
+.fresh{
+    &__view{
+        font-size: 1.2rem;
+        background-color: #fff;
+        color: $color-links;
+        border: .2rem solid $color-links;
+        padding: .6rem 2rem;
+        font-weight: bold;
+        border-radius: 5rem;
+        &:hover{
+            background-color: $color-links;
+            color: #fff;
+            text-decoration: none;
+            transition: all .2s ease-in;
+        }
+    }
+}

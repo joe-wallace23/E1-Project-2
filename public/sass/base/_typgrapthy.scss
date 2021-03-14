@@ -1,0 +1,133 @@
+.plus{
+    &__content h3{
+        padding-top: .5rem;
+        font-size: 1.4rem;
+        color: #000;
+        font-weight: bold;
+        text-transform: capitalize;
+    }
+    &__content p{
+        font-size: 1rem;
+        color: #000;
+
+    }
+}
+.fresh{
+    background-image: url(/images/fresh.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    &__content{
+        padding-top: 9rem;
+     padding-bottom: 6rem;
+    }
+    &__content h2{
+        font-size: 2.5rem;
+        color: #fff;
+        font-weight: bold;
+    }
+
+}
+
+.eat{
+    padding: 3rem 0;
+
+    &__content h3.mom{
+        font-size: .8rem;
+        color: #333;
+        text-transform: uppercase;
+        margin-bottom:-.1rem;
+    }
+    &__content h2{
+        font-size: 1.3rem;
+        color: $color-links;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+    &__content img{
+        width: 16rem;
+    }
+}
+.eat .col-lg-4{
+    margin-bottom: 1rem;
+}
+.phone{
+    padding: 4rem 0;
+    &__content h2{
+        font-size: 2.8rem;
+        font-weight: bold;
+    }
+    &__content span.orange{
+       color: #f5821f;
+    }
+    &__content span.pink{
+        color: #e11383;
+    }
+    &__content p{
+      font-size: 1.8rem;
+      color:#333;
+    }
+    &__link{
+        font-size: 1rem;
+        color: gray;
+        &:hover{
+            color: gray;
+            text-decoration: none;
+        }
+
+        
+    }
+    &__list{
+        list-style: none;
+    }
+    &__content img{
+        height: 40rem;
+        @include respond(tab-port){
+            width: 100%;
+        }
+    }
+}
+.phone .col-lg-6{
+    margin-bottom: 1rem;
+}
+
+.congrats{
+    margin: 6rem 0;
+    &__content h2{
+        color: #e11383;
+        margin-bottom: 2rem;
+    }
+    &__content img{
+        width: 100%;
+        height: 50rem;
+        border-radius: 1rem;
+    }
+}
+
+.congrats2{
+    margin: 6rem 0;
+    &__content h2{
+        color: #673716;
+        margin-bottom: 2rem;
+    }
+    &__content img{
+        width: 100%;
+        height: 50rem;
+        border-radius: 1rem;
+    }
+    &__button{
+        margin-bottom: 1rem;
+    }
+    &__try{
+        font-size: 1.2rem;
+        color: #fff;
+        background-color: #e11383;
+        padding: .5rem 1.4rem;
+        border-radius: 5rem;
+        &:hover{
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
